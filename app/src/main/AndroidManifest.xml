@@ -19,6 +19,12 @@
     <!--获取统计数据-->
     <uses-permission android:name="android.permission.CAMERA" />
     <!--使用步行AR导航，配置Camera权限-->
+    <!--百度定位所需要权限，前面2个是LOCATE权限组的2个危险权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
     <application
         android:name=".BaiduMapApplication"
         android:allowBackup="true"
